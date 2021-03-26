@@ -158,3 +158,18 @@ Lo que salta a primera lista es que ya no tenemos 2 valores como en la singly, a
 ![mdll](./imgs/mdll)
 
 Una doubly linked list tiene el mismo comportamiento que una singly linked list, pero con la particularidad de que esta **SI** puede regresar. Aún necesita ir moviéndose una por una, pero ahora si lo desea puede regresar porque ya conoce quién es su elemento anterior y también quién es el siguiente, es decir, ya no es necesario repetir el ciclo.
+
+### Stacks
+
+Es una estructura de datos que funciona bajo un principio, ese principio se llama LIFO, esas siglas quieren decir lo siguiente:
+
+* Last In -> El último que entra
+* First Out -> El pirmero que sale
+
+Es una pila porque estas apilando los datos, los primeros que entran se quedan abajo, y los últimos hasta arriba. Los métodos de un stack son los siguientes:
+
+| Método |                Acción                |
+| :----: | :----------------------------------: |
+|  pop   |      Remover el último elemento      |
+|  push  |     Agregar un elemento al final     |
+|  peek  | Tomar al último elemento de la línea |
