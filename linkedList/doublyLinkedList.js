@@ -58,8 +58,9 @@ class DoublyLinkedList {
     }
     remove(index) {
         const firstPointer = this.getTheIndex(index - 1);
-        const restNodes = this.getTheIndex(index + 1);
-        firstPointer.next = restNodes;
+        const holdingPointer = this.getTheIndex(index + 1);
+        firstPointer.next = holdingPointer;
+        holdingPointer.prev = firstPointer;
         this.length--;
         return this.head;
     }
