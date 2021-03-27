@@ -173,3 +173,18 @@ Es una pila porque estas apilando los datos, los primeros que entran se quedan a
 |  pop   |      Remover el último elemento      |
 |  push  |     Agregar un elemento al final     |
 |  peek  | Tomar al último elemento de la línea |
+
+### Queues
+
+Es muy parecida a los Stack pero su comportamiento es diferente ya que no trabaja con el principio LIFO, trabaja con FIFO
+
+* FI -> First In
+* FO -> Fisrt Out
+
+Un ejemplo de ellas son cuando te formas en un banco para esperar turno en caja, si estuvieras a tres personas de pasar a caja, y de repente el último pasa, no lo verías justo, además el primero que llegó fue la primera persona el salir, así funciona un queue, sus métodos son:
+
+| Método  |                  Acción                  |
+| :-----: | :--------------------------------------: |
+| enqueue | Agregar un elemento al final de la línea |
+| dequeue |  Remover al primer elemento de la línea  |
+|  peek   |   Tomar el primer elemento de la línea   |
