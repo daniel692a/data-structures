@@ -188,3 +188,36 @@ Un ejemplo de ellas son cuando te formas en un banco para esperar turno en caja,
 | enqueue | Agregar un elemento al final de la línea |
 | dequeue |  Remover al primer elemento de la línea  |
 |  peek   |   Tomar el primer elemento de la línea   |
+
+### Trees
+
+La estructura de un tree es la siguiente:
+
+![tree](./imgs/tree)
+
+Tenemos un nodo que se convierte en Root, es el nodo principal, de el se empieza a ramificar todos los datos que se van a generar, en el ejemplo de arriba 1 es el nodo Root.
+
+Existen los parent que son padres, en el ejemplo de arriba 1 y 3 son parent porque de ellos salen ramas.
+
+Existen los nodos hijos (child) que son aquellos que tienen un padre, en el caso anterior 2, 3, 4,  6 y 7 son hijos, 2, 3 y 4 tienen como padre a 1, 6 y 7 tienen como padre a 6 y 7.
+
+También existen las hojas (leafs), son aquellos nodos que no tienen hijos, con el ejemplo esos nodos leaf son 2, 4, 6 y 7.
+
+Los hermanos (sibling), son el conjunto de nodos que vienen del mismo padre, 2, 3 y 4 son hermanos porque tienen como padre a 1, 6 y 7 son hermanos porque tienen como padre a 3.
+
+Los sub tree, existe un sub tree en 3, tiene al 6 y 7 como hijos.
+
+Existen varios tipos de trees, uno de ellos es el Binary Search tree, este tiene una forma de acomodar los datos:
+
+![bstree](./imgs/bstree)
+
+Como puedes ver los números que van en aumento van del lado derecho y los que decrementan están del lado izquierdo.
+
+#### Métodos de los árboles
+
+| Métodos |      Acción      |
+| :-----: | :--------------: |
+| search  |  Buscar un nodo  |
+| insert  | Insertar un nodo |
+| delete  |  Borrar un nodo  |
+
