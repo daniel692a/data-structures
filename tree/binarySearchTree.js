@@ -53,6 +53,17 @@ class Tree {
             }
         }
     }
+    recursiveSearch(value, tree = this.root){
+        if(tree.value === null) {
+            return 'Fatality';
+        } else if(value > tree.value) {
+            return this.search(value, tree.right);
+        } else if(value < tree.value) {
+            return this.search(value, tree.left);
+        } else {
+            return tree;
+        }
+    }
 }
 
 const binarySearchTree = new Tree();
