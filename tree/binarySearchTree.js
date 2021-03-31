@@ -40,10 +40,10 @@ class Tree {
     search(value) {
         let currentNode = this.root;
         while(true) {
-            if(value === currentNode.value) {
+            if(!currentNode) {
+                return `Fatality`;
+            }else if(value === currentNode.value) {
                 return currentNode;
-            } else if (value === null) {
-                return false;
             } else {
                 if(value < currentNode.value) {
                     currentNode = currentNode.left;
