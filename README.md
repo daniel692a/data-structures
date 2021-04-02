@@ -221,3 +221,30 @@ Como puedes ver los números que van en aumento van del lado derecho y los que d
 | insert  | Insertar un nodo |
 | delete  |  Borrar un nodo  |
 
+### Grafos
+
+Un grafo son nodos interconectados que tienen como elementos lo siguiente:
+
+* Los Nodos -> Vértices
+* Edge -> Bordes : Son los que conectan un nodo con otro
+
+![graph](./imgs/graph)
+
+#### Tipos de grafos
+
+* Dirigidos: Un nodo nos lleva a otro nodo, y ese nodo lleva a otro nodo
+* No Dirigidos: Conjunto de nodos interconectados  en el cual puedo ir a cualquier nodo y regresar
+
+![tiposgraf](./imgs/tiposgraf)
+
+* Ponderados: en el  borde existe un peso que puede ser un dígito u otro valor
+
+* No ponderados: No hay un peso en el borde
+
+  Un ejemplo para comprender esto, es para una aerolínea,  si quieres viajar y la aerolínea busca la forma de consumir menos gasolina, un grafo ponderado ayuda debido a que en cada vértice existe el peso que sería la gasolina, entonces sumando ese peso encontrarás la ruta que consuma menos gasolina.
+
+![gp](./imgs/gp)
+
+    * Cíclico: Puede regresar y recorrer todo el grafo
+
+    * Acíclico: No se puede recorrer todo el grafo y regresar a un punto
